@@ -35,4 +35,5 @@ def count_words_with_pandas():
     df2 = df.groupby('word')['word'].count().sort_values(ascending=False)
     print(f'Max repeated word is \'{df2.iloc[:1].index.values[0]}\' with {df2.iloc[:1].values[0]} occurences')
 
+count_words()
 count_words_with_pandas()
